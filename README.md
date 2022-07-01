@@ -24,6 +24,8 @@ results <- biblioAnalysis(M, sep=';')
     2. most frequent keywords
 
     3. annual production line plot
+    
+    ![annual scientific production](/plots/Annual scientific production.tiff)
 
     4. most productive countries
 
@@ -46,6 +48,9 @@ uni_info <- metaTagExtraction(M, Field="AU_UN", sep=";", aff.disamb = TRUE)
 ```
 
 - reference co-citation network
+
+![co-citation reference](/plots/Co-citation references.tiff)
+
 ```
 Ref_cocite <- biblioNetwork(M, analysis = "co-citation", network = "references", sep = ";")
 
@@ -59,7 +64,15 @@ netstat <- networkStat(Ref_cocite)
 summary(netstat,k=10)
 ```
 
-- keyword co-occurence network
+- keyword co-occurrence network
+
+plot 1: more nodes
+
+![co-occurrence of author keywords](./plots/Co-occurrence of author keywords.tiff)
+
+plot 2: fewer nodes
+
+![co-occurrence of author keywords](./plots/Co-occurrence of keywords.tiff)
 
 ```
 Key_cooccur <- biblioNetwork(M, analysis = "co-occurrences", network = "author_keywords", sep = ";")
