@@ -8,7 +8,7 @@ The literature are collected from the core databases (SSCI and A&HCI) of Web of 
 
 ## Tools
 
-R package [`Bibliometrix 3.0.3`] (updated Sept 28, 2020) was used to extract the meta information from WoS items, to conduct descriptive analyses on the most cited papers and countries etc, and to visualize the bibliographic network. 
+R package `Bibliometrix 3.0.3` (updated Sept 28, 2020) was used to extract the meta information from WoS items, to conduct descriptive analyses on the most cited papers and countries etc, and to visualize the bibliographic network. 
 
 ## Step-by-step analysis
 
@@ -25,7 +25,7 @@ results <- biblioAnalysis(M, sep=';')
 
     3. annual production line plot
     
-    ![annual scientific production](/plots/Annual scientific production.tiff)
+    ![annual scientific production](/plots/Annual scientific production.png)
 
     4. most productive countries
 
@@ -49,7 +49,7 @@ uni_info <- metaTagExtraction(M, Field="AU_UN", sep=";", aff.disamb = TRUE)
 
 - reference co-citation network
 
-![co-citation reference](/plots/Co-citation references.tiff)
+![co-citation reference](/plots/Co-citation references.png)
 
 ```
 Ref_cocite <- biblioNetwork(M, analysis = "co-citation", network = "references", sep = ";")
@@ -68,11 +68,11 @@ summary(netstat,k=10)
 
 plot 1: more nodes
 
-![co-occurrence of author keywords](./plots/Co-occurrence of author keywords.tiff)
+![co-occurrence of author keywords](./plots/Co-occurrence of author keywords.png)
 
 plot 2: fewer nodes
 
-![co-occurrence of author keywords](./plots/Co-occurrence of keywords.tiff)
+![co-occurrence of author keywords](./plots/Co-occurrence of keywords.png)
 
 ```
 Key_cooccur <- biblioNetwork(M, analysis = "co-occurrences", network = "author_keywords", sep = ";")
