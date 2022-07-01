@@ -25,7 +25,11 @@ results <- biblioAnalysis(M, sep=';')
 
     3. annual production line plot
     
-    ![annual scientific production](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Annual%20scientific%20production.png)
+    <img
+  src="https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Annual%20scientific%20production.png"
+  alt="Alt text"
+  title="annual scientific production"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
     4. most productive countries
 
