@@ -25,7 +25,7 @@ results <- biblioAnalysis(M, sep=';')
 
     3. annual production line plot
     
-    ![annual production line plot](plots/Annual%20scientific%20production.png)
+    ![annual production line plot](plots/Annual%20scientific%20production.jpeg)
 
 
     4. most productive countries
@@ -50,7 +50,7 @@ uni_info <- metaTagExtraction(M, Field="AU_UN", sep=";", aff.disamb = TRUE)
 
 - reference co-citation network
 
-![co-citation reference](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-citation%20references.png)
+![co-citation reference](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-citation%20references.jpeg)
 
 ```
 Ref_cocite <- biblioNetwork(M, analysis = "co-citation", network = "references", sep = ";")
@@ -69,11 +69,11 @@ summary(netstat,k=10)
 
 plot 1: more nodes
 
-![co-occurrence of author keywords](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-occurrence%20of%20author%20keywords.png)
+![co-occurrence of author keywords](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-occurrence%20of%20author%20keywords.jpeg)
 
 plot 2: fewer nodes
 
-![co-occurrence of author keywords](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-occurrence%20of%20keywords.png)
+![co-occurrence of author keywords](https://github.com/Chezvivian/Bibliometrix-multimodal-translation/blob/main/plots/Co-occurrence%20of%20keywords.jpeg)
 
 ```
 Key_cooccur <- biblioNetwork(M, analysis = "co-occurrences", network = "author_keywords", sep = ";")
